@@ -1,7 +1,3 @@
-# Mitt første prosjekt.
-# Dette programmet skal lese en tekstfil med DNA-sekvens og analysere det. 
-# Lese filen, beregne totalt antall baser, beregne prosentandel av hver base, og beregne prosentandel C-G innhold. 
-# Ekstra: la bruker legge inn fil som skal analyseres. 
 
 import matplotlib.pyplot as plt
 
@@ -42,3 +38,6 @@ def analyze_sequence():
     plt.ylabel("Count")
     plt.show()
 
+
+if __name__ == "__main__":
+    analyze_sequence()
