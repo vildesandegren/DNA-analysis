@@ -28,15 +28,17 @@ python3 DNA_analysis.py
 
 
 ## Example output:
+```
 Total bases: 148
 A: 15 (10.1%)
 T: 7 (4.7%)
 C: 0 (0.0%)
 G: 7 (4.7%)
 G-C content: 4.7%
+```
 
 And a pop-up window will display a bar chart of base frequencies:
-! [Base frequency plot](example_plot.png)
+![Base frequency plot](example_plot.png)
 
 ## What I learned
 - How to use matplotlib for data visualization
