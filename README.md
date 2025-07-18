@@ -27,8 +27,7 @@ python3 DNA_analysis.py
 4. When prompted, input the name of the input file. 
 
 
-##Example output:
-Input file:sequence_fasta.txt
+## Example output:
 Total bases: 148
 A: 15 (10.1%)
 T: 7 (4.7%)
@@ -37,9 +36,9 @@ G: 7 (4.7%)
 G-C content: 4.7%
 
 And a pop-up window will display a bar chart of base frequencies:
+! [Base frequency plot](example_plot.png)
 
-
-# What I learned
+## What I learned
 - How to use matplotlib for data visualization
 - How to organize a project and share it on GitHub
 
