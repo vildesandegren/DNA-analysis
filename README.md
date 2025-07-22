@@ -45,7 +45,7 @@ And a pop-up window will display a bar chart of base frequencies:
 - How to organize a project and share it on GitHub
 
 ## Future ideas
-- Support multiple sequences in one file
-- Save the chart as an image file
-- Add support for RNA or protein sequences
-- Use Biopython for FASTA handling
+- [] Support multiple sequences in one file
+- [x] Save the chart as an image file 
+- [] Add support for RNA or protein sequences
+- [] Use Biopython for FASTA handling
