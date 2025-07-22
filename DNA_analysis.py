@@ -1,5 +1,7 @@
 
 import matplotlib.pyplot as plt
+import os
+import time
 
 def analyze_sequence():
     file_input = input("Input file:")
@@ -36,7 +38,24 @@ def analyze_sequence():
     plt.title("Base frequency in DNA-sequence")
     plt.xlabel("Base")
     plt.ylabel("Count")
+    save_file = input("Do you want to save the plot as an image? (y/n)")
+    if save_file.lower() == "y":
+        #make unique name for plot
+        base_name = os.path.splitext(file_input)[0]
+        timestamp = time.strftime("%d%m%Y-%H%M")
+        plot_name = f"{base_name}_plot_{timestamp}"
+        
+        #place plots in seperate folder       
+        folder = "plots"
+        os.makedirs(folder, exist_ok=True)
+        plot_path = os.path.join(folder, plot_name)
+
+        #save plot and let user know
+        plt.savefig(plot_name, format="png")
+        print(f"Plot saved as {plot_name}.png")
+    #show plot. 
     plt.show()
+
 
 
 if __name__ == "__main__":
